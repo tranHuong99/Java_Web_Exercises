@@ -15,11 +15,10 @@ import java.util.Scanner;
 public class Bai3 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap n= ");
+        System.out.println("Nhap x= ");
         int x = sc.nextInt();
         int test = 1;
         int k = (int)sqrt(x);
-        System.out.print("%d so nguyen to dau tien la: ");
         for(int i=2;i<=k;i++)
         {
             if(x%i==0)
@@ -27,8 +26,7 @@ public class Bai3 {
                  test = 0;
                  break;
              }
-            if(test==1)
-                System.out.printf("%d ", i);
         }
+        System.out.printf("%d so nguyen to dau tien la: ", x);
     }
 }
