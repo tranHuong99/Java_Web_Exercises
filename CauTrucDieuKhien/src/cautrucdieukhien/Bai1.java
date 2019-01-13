@@ -16,7 +16,7 @@ public class Bai1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap a = ");
-        float a = sc.nextFloat(); //ax + b = 0
+        float a = sc.nextFloat();
         System.out.println("Nhap b = ");
         float b = sc.nextFloat();
         System.out.println("Nhap c = ");
@@ -33,7 +33,7 @@ public class Bai1 {
             else
             {
                 System.out.printf("Phuong trinh co 1 nghiem don\n");
-                System.out.printf("x = %.5lf", -c/b);
+                System.out.printf("x = %.5f", -c/b);
             }
         }
         else
@@ -43,13 +43,13 @@ public class Bai1 {
             if(delta>0)
             {
                 System.out.printf("Phuong trinh co 2 nghiem phan biet\n");
-                System.out.printf("x1 = %.5lf\n", (-b-sqrt(delta))/(2*a));
-                System.out.printf("x2 = %.5lf\n", (-b+sqrt(delta))/(2*a));
+                System.out.printf("x1 = %.5f\n", (-b-sqrt(delta))/(2*a));
+                System.out.printf("x2 = %.5f\n", (-b+sqrt(delta))/(2*a));
             }
             else if(delta==0)
             {
                 System.out.printf("Phuong trinh co nghiem kep\n");
-                System.out.printf("x1 = x2 = %.5lf", -b/(2*a));
+                System.out.printf("x1 = x2 = %.5f", -b/(2*a));
             }
             else
                 System.out.printf("Phuong trinh vo nghiem");
