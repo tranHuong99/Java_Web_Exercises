@@ -18,7 +18,10 @@ public class Bai5 {
         float a = sc.nextFloat();
         System.out.println("Nhap a> ");
         float b = sc.nextFloat();
+        a = a+b;
+        b = a-b;
+        a = a-b;
         System.out.println("Ket qua:");
-        System.out.printf("a = %.1f, b = %.1f", b, a);
+        System.out.printf("a = %.1f, b = %.1f", a,b);
     } 
 }
