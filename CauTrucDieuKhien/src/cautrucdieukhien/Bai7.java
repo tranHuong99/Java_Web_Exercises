@@ -11,15 +11,22 @@ import java.util.Scanner;
  *
  * @author HUONG XINH GAI
  */
-public class Bai5_3 {
+public class Bai7 {
     public static void main(String[] args){
-        //đây là bài 5.4
         Scanner sc = new Scanner(System.in);
-        System.out.print("Nhap n = ");
+        System.out.print("Nhập n = ");
         int n = sc.nextInt();
-        double Sum = 0;
-        for(int i=1;i<=n;i+=2)
-            Sum += 1.0/(2*i);
-        System.out.println("S(n) = " +Sum);
+        int fn, f0 = 0, f1 = 1;
+        System.out.print("Dãy Fibonaci: ");
+        for(int i=0;i<n;i++){
+            if(n==0 || n==1)
+                fn = 1;
+            else{
+                fn = f0 +f1;
+                f0 = f1;
+                f1 = fn;
+            }
+            System.out.printf("%d ", fn);
+        }
     }
 }
