@@ -5,22 +5,21 @@
  */
 package cautrucdieukhien;
 
-import static java.lang.Math.pow;
 import java.util.Scanner;
 
 /**
  *
  * @author HUONG XINH GAI
  */
-public class Bai5_3 {
+public class Bai5_7 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhập n = ");
         int n = sc.nextInt();
-        int Sum=0;
-        for(int i=1;i<=n;i++){
-            Sum += pow(i,2);
+        double Sum = 0;
+        for(int i=0;i<=n;i++){
+            Sum += (double)(2*i+1)/(2*i+2);
         }
-        System.out.println("S(n) = "+Sum);
+        System.out.println("S(n) = " +Sum);
     }
 }

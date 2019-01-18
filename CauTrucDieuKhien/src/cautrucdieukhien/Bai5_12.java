@@ -12,15 +12,17 @@ import java.util.Scanner;
  *
  * @author HUONG XINH GAI
  */
-public class Bai5_3 {
+public class Bai5_12 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhập n = ");
         int n = sc.nextInt();
-        int Sum=0;
+        int Sum = 0;
+        double S_n = 0;
         for(int i=1;i<=n;i++){
-            Sum += pow(i,2);
+            Sum += i;
+            S_n += 1.0/Sum;
         }
-        System.out.println("S(n) = "+Sum);
+        System.out.print("S(n) = " +S_n);
     }
 }

@@ -16,9 +16,9 @@ public class Bai5_6 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap n = ");
         int n = sc.nextInt();
-        int Sum = 0;
+        double Sum = 0;
         for(int i=1;i<=n;i++)
-            Sum += i;
+            Sum += 1.0/(i*(i+1));
         System.out.println("S(n) = " +Sum);
     }
 }
