@@ -5,10 +5,23 @@
  */
 package cautrucdieukhien;
 
+import java.util.Scanner;
+
 /**
  *
  * @author HUONG XINH GAI
  */
 public class Bai4_2 {
-    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhập n = ");
+        int n = sc.nextInt();
+        int min=0;
+        do{
+            if(min>n)
+                min = n;
+            n= sc.nextInt();
+        }while(n!=0);
+        System.out.print("Max(n) = " +min);
+    }
 }
