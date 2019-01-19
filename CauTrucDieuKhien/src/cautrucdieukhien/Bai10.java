@@ -16,6 +16,16 @@ public class Bai10 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhập n = ");
         int n = sc.nextInt();
-        
+        int reverse=0, rem, temp = n;
+        while(temp != 0)
+        {
+            rem = temp % 10;
+            reverse = reverse*10 + rem;
+            temp /= 10;
+        } 
+        if(reverse == n) 
+            System.out.printf("%d la so doi xung", n);
+        else
+            System.out.printf("%d khong doi xung", n);
     }
 }
