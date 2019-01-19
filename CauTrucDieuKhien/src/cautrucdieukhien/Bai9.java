@@ -5,7 +5,7 @@
  */
 package cautrucdieukhien;
 
-import static cautrucdieukhien.Bai8.giaithua;
+import static java.lang.Math.abs;
 import static java.lang.Math.pow;
 import java.util.Scanner;
 
@@ -15,24 +15,29 @@ import java.util.Scanner;
  */
 public class Bai9 {
     public static int giaithua(int n)
+    {
+        int giai_thua = 1;
+        for (int i=1; i<=n; i++)
         {
-            int giai_thua = 1;
-            for (int i = 1; i <= n + 1; i++)
-            {
-                giai_thua = giai_thua*i;
-            }
-        return giai_thua;
-        } 
+            giai_thua *= i;
+        }
+    return giai_thua;
+    } 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Nhập x = ");
-        int x = sc.nextInt();
-        System.out.print("Nhập y = ");
-        int n = sc.nextInt();
-        double Cos_x =0;
-        for(int i=0;i<=n;i++){
-            Cos_x += pow(-1,i)*pow(x, 2*i)/giaithua(2*i);
-        }
-        System.out.print("Cos(x) = " +Cos_x);
+        System.out.print("Nhập goc > ");
+        double x = sc.nextDouble(); //đơn vị là độ
+        //đổi đơn vị sang rad
+        double xRad = x*Math.PI /180;
+        double ERR = 0.0001;
+        double dif = 0;
+        double Cos_x=0;
+        int i=0;
+        do{
+            dif = pow(-1,i)*pow(xRad, 2*i)/giaithua(2*i);
+            Cos_x += dif;
+            i++;
+        }while(abs(dif) > ERR);
+        System.out.print("Sin(x) = " +Cos_x);
     }
 }
