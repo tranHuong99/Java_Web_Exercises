@@ -59,8 +59,11 @@ public class Bai11_1 {
         switch(count){
             case 0: break;
             case 1: str = chuyenDoiGiaTri(count);
+                break;
             case 2: str = "mươi";
+                break;
             case 3: str = "trăm";
+                break;
         }
         return str;
     }
@@ -69,7 +72,6 @@ public class Bai11_1 {
         System.out.println("Nhập n = ");
         int n = sc.nextInt();
         String str = new String();
-        System.out.printf("Số %d đọc là %s %s", n, chuyenDoiGiaTri(str), chuyenDoiHang(str));
         
     }
 }
