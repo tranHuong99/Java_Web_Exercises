@@ -1,0 +1,36 @@
+#mainNav .navbar-brand{
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 24px;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.header {
+    background: no-repeat center center;
+    background-size: cover;
+}
+.site-heading {
+    padding: 200px 0;
+    text-align: center;
+}
+.list-inline-item a {
+    color: #000;
+    font-size: 20px;
+}
