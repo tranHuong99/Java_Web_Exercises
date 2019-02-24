@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Bai_tap_mang_1_chieu.Bai_tap_mang_2_chieu;
+package Bai_tap_mang_2_chieu;
 
 import java.util.Scanner;
 
@@ -11,31 +11,30 @@ import java.util.Scanner;
  *
  * @author HUONG XINH GAI
  */
-public class Bai2 {
+public class Bai1 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int[][] mat1 = new int[3][3];
-        int[][] mat2 = new int[3][3];
-        int[][] mat3 = new int[3][3];
-        System.out.println("Nhập ma trận thứ nhất: ");
+        int[][] matrix = new int[3][3];
+        System.out.println("Nhập ma trận: ");
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
                 System.out.printf("m[%d][%d] = ", i,j);
-                mat1[i][j] = sc.nextInt(); 
+                matrix[i][j] = sc.nextInt(); 
             }
         }
-        System.out.println("Nhập ma trận thứ hai: ");
         for(int i=0;i<3;i++){
+            int sum_Row=0;
             for(int j=0;j<3;j++){
-                System.out.printf("m[%d][%d] = ", i,j);
-                mat2[i][j] = sc.nextInt(); 
+                sum_Row += matrix[i][j];
             }
+            System.out.printf("Dòng thứ %d có tổng là %d\n", i, sum_Row);
         }
-        System.out.println("Tổng 2 ma trận: ");
         for(int i=0;i<3;i++){
+            int sum_Col=0;
             for(int j=0;j<3;j++){
-                mat3[i][j] = mat1[i][j]+mat2[i][j]; 
+                sum_Col += matrix[j][i];
             }
+            System.out.printf("Cột thứ %d có tổng là %d\n", i, sum_Col);
         }
     }
 }
