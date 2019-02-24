@@ -28,5 +28,7 @@ public class Bai5 {
         int yB = sc.nextInt();
         System.out.printf("zB = ");
         int zB = sc.nextInt();
+        System.out.printf("Tổng của 2 vector A+B = vector C: (xC=%d, yC=%d, zC=%d)\n", xA+xB, yA+yB, zA+zB);
+        System.out.printf("Tích vô hướng của 2 vector là: %d", xA*xB+yA*yB+zA*zB);
     }
 }
