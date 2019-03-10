@@ -31,11 +31,24 @@ public class Bai2 {
                 mat2[i][j] = sc.nextInt(); 
             }
         }
-        System.out.println("Tổng 2 ma trận: ");
+        System.out.println("Tổng 2 ma trận: mat1+ma2 = mat3: ");
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
                 mat3[i][j] = mat1[i][j]+mat2[i][j]; 
+                System.out.printf("%d ", mat3[i][j]);
             }
+            System.out.println();
+        }
+        System.out.println("Tích 2 ma trận: mat1*ma2 = mat3: ");
+        for(int i=0;i<3;i++){
+            for(int k=0;k<3;k++){
+                mat3[i][k] = 0; 
+                for(int j=0;j<3;j++){
+                    mat3[i][k] += mat1[i][j]*mat2[j][k];
+                    System.out.printf("%d ", mat3[i][j]);
+                }
+            }
+            System.out.println();
         }
     }
 }

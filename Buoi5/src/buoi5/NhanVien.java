@@ -60,6 +60,7 @@ public class NhanVien {
     public void inputInfo(){
         System.out.println("Nhập vào tên nhân viên: ");
         ten = sc.nextLine();
+        sc.nextLine();
         System.out.println("Nhập tuổi nhân viên: ");
         tuoi = sc.nextInt();
         sc.nextLine();
